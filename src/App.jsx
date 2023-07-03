@@ -1,11 +1,5 @@
-import { Suspense } from "react";
-import { lazy } from "react";
-import { useState } from "react";
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Modal from "./components/Modal";
-import Navbar from "./Components/Navbar";
 import { PATHS } from "./constants/pathnames";
 // import PageLoading from "./Components/PageLoading";
 // import PrivateRoute from "./components/PrivateRoute";
