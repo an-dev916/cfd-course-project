@@ -1,14 +1,7 @@
-import { Skeleton } from "antd";
-import axios from "axios";
 import React from "react";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 // import { flickitySlider } from "../../../public/dest/main";
-import { useAuthen } from "../../components/AuthenContext";
 import CallRegister from "../../components/CallRegister";
-import CourseItem from "../../components/CourseItem";
-import PageLoading from "../../Components/PageLoading";
-import { PATHS } from "../../constants/pathnames";
+import PageLoading from "../../components/PageLoading";
 import useDebounce from "../../hooks/useDebounce";
 import useQuery from "../../hooks/useQuery";
 import { courseService } from "../../services/courseService";

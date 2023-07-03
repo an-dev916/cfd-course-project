@@ -1,12 +1,5 @@
-import { Skeleton } from "antd";
-import React from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import CourseComingItem from "../../components/CourseComingItem";
-import { PATHS } from "../../constants/pathnames";
-import useQuery from "../../hooks/useQuery";
-import { courseService } from "../../services/courseService";
-import { localTime } from "../../utils/localTime";
 
 const CoursesComing = ({ courseComingData, courseComingLoading }) => {
   const { courses } = courseComingData || {};
