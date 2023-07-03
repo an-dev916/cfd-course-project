@@ -29,7 +29,7 @@ const About = lazy(() => import("./pages/about"));
 const Blog = lazy(() => import("./pages/blog"));
 const BlogDetail = lazy(() => import("./pages/blog-detail"));
 const ChangePassword = lazy(() => import("./pages/change-password"));
-const Contactus = lazy(() => import("./pages/Contactus"));
+const Contactus = lazy(() => import("./pages/contactus"));
 const CourseDetail = lazy(() => import("./pages/course-detail"));
 const CourseOrder = lazy(() => import("./pages/course-order"));
 const Courses = lazy(() => import("./pages/courses"));
