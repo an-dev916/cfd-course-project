@@ -29,7 +29,7 @@ const About = lazy(() => import("./pages/about"));
 const Blog = lazy(() => import("./pages/blog"));
 const BlogDetail = lazy(() => import("./pages/blog-detail"));
 const ChangePassword = lazy(() => import("./pages/change-password"));
-const Contactus = lazy(() => import("./Pages/Contactus"));
+const Contactus = lazy(() => import("./pages/Contactus"));
 const CourseDetail = lazy(() => import("./pages/course-detail"));
 const CourseOrder = lazy(() => import("./pages/course-order"));
 const Courses = lazy(() => import("./pages/courses"));
@@ -39,7 +39,7 @@ const Privacy = lazy(() => import("./pages/privacy"));
 const MyCourses = lazy(() => import("./pages/student-profile/MyCourses"));
 const MyInfo = lazy(() => import("./pages/student-profile/MyInfo"));
 const MyPayment = lazy(() => import("./pages/student-profile/MyPayment"));
-const PageLoading = lazy(() => import("./Components/PageLoading"));
+// const PageLoading = lazy(() => import("./Components/PageLoading"));
 
 function App() {
   return (
