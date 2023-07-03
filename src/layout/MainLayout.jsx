@@ -1,17 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { AuthenProvider } from "../components/AuthenContext";
 import AuthenModal from "../components/AuthenModal";
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Modal from "../components/Modal";
-import Navbar from "../Components/Navbar";
-import PageLoading from "../Components/PageLoading";
-import useDebounce from "../hooks/useDebounce";
-import useQuery from "../hooks/useQuery";
-import { courseService } from "../services/courseService";
-import { teamsService } from "../services/teamsService";
+import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
   const { pathname } = useLocation();
