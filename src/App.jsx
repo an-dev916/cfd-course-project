@@ -43,7 +43,7 @@ const MyPayment = lazy(() => import("./pages/student-profile/MyPayment"));
 
 function App() {
   return (
-    <Suspense fallback={<div>loading</div>}>
+    <Suspense fallback={<div></div>}>
       <Routes>
         <Route path={PATHS.HOME} element={<MainLayout />}>
           <Route index element={<HomePage />} />
