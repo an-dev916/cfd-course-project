@@ -1,5 +1,7 @@
+import { Spin } from "antd";
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import { styled } from "styled-components";
 import { PATHS } from "./constants/pathnames";
 // import PageLoading from "./Components/PageLoading";
 // import PrivateRoute from "./components/PrivateRoute";
@@ -41,9 +43,22 @@ const MyInfo = lazy(() => import("./pages/student-profile/MyInfo"));
 const MyPayment = lazy(() => import("./pages/student-profile/MyPayment"));
 // const PageLoading = lazy(() => import("./Components/PageLoading"));
 
+const Loading = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 function App() {
   return (
-    <Suspense fallback={<div></div>}>
+    <Suspense
+      fallback={
+        <Loading>
+          <Spin />
+        </Loading>
+      }
+    >
       <Routes>
         <Route path={PATHS.HOME} element={<MainLayout />}>
           <Route index element={<HomePage />} />
