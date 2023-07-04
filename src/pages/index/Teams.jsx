@@ -30,7 +30,6 @@ const Teams = ({ teamsLoading, teamsData }) => {
     }
   }, [teams]);
 
-  console.log("teams :>> ", teams);
   return (
     <section className="teacher --scpadding">
       <div className="container">

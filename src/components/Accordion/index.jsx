@@ -1,8 +1,6 @@
 import React from "react";
 
-const Accordion = ({ courseDetail }) => {
-  console.log("accor", courseDetail);
-
+const Accordion = () => {
   return (
     <div className="accordion">
       <div className="accordion__content">

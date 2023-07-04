@@ -56,7 +56,6 @@ const CourseDetail = () => {
   //   schedule?.startDate &&
   //   moment(new Date(schedule?.startDate).toLocaleDateString()).calendar();
 
-  console.log("courseDetail :>> ", courseDetail);
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -68,7 +67,6 @@ const CourseDetail = () => {
   const token = localStorage.getItem(LOCAL_STORAGE.token);
 
   const handleRegister = () => {
-    console.log("test");
     if (!token) {
       openAuthenModal();
     }
@@ -288,7 +286,7 @@ const CourseDetail = () => {
                 Nội dung khoá học
               </h3>
               {/* Accordion */}
-              <Accordion courseDetail={courseDetail} />
+              <Accordion />
             </div>
             <div className="contentrow ctrequest">
               <h3 className="contentrow__title title --t3">Yêu cầu cần có</h3>

@@ -15,14 +15,10 @@ const MainLayout = () => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    // const scriptLib = document.createElement("script");
     script.src = "/dest/main.js";
-    // scriptLib.src = "/dest/jsmain.min.js";
 
-    // document.body.appendChild(scriptLib);
     document.body.appendChild(script);
   }, []);
-
   return (
     <AuthenProvider>
       {/* Page Effects */}

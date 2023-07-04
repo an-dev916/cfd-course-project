@@ -9,7 +9,6 @@ const instance = axios.create({
 // Interceptor cho phép can thiệp vào quá trình nhận phản hồi (RESPONSE) từ server.
 instance.interceptors.response.use(
   (response) => {
-    console.log("response :>> ", response);
     return response;
   },
   async (error) => {
@@ -34,6 +33,7 @@ instance.interceptors.response.use(
       } catch (error) {
         // Xử lý lỗi nếu không thể cập nhật token mới
         // Ví dụ: chuyển hướng người dùng đến trang login
+        console.log("phiên bản hết hạn");
         alert("Phiên bản hết hạn! Vui lòng đăng nhập lại.");
         localStorage.removeItem(LOCAL_STORAGE.token);
         localStorage.removeItem(LOCAL_STORAGE.refreshToken);

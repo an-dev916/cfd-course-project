@@ -6,7 +6,6 @@ import { localTime } from "../../utils/localTime";
 
 const MyPayment = () => {
   const { userPayments } = useAuthen();
-  console.log("userPayments :>> ", userPayments);
 
   return (
     <div className="tab__content-item" style={{ display: "block" }}>

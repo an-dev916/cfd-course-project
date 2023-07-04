@@ -4,7 +4,6 @@ import { formatCurrency } from "../../utils/format";
 
 const MyCourses = () => {
   const { userCourses } = useAuthen();
-  console.log("userCourses :>> ", userCourses);
   return (
     <div className="tab__content-item" style={{ display: "block" }}>
       <div className="courses__list">

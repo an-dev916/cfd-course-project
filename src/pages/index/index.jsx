@@ -32,7 +32,6 @@ const HomePage = () => {
     teamsLoading || courseComingLoading || courseLoading,
     500
   );
-  console.log("isLoading :>> ", isLoading);
 
   return (
     <main className="mainwrapper">

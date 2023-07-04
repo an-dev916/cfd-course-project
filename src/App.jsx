@@ -46,11 +46,13 @@ const MyPayment = lazy(() => import("./pages/student-profile/MyPayment"));
 const Loading = styled.div`
   width: 100vw;
   height: 100vh;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 function App() {
+  console.log("test");
   return (
     <Suspense
       fallback={
@@ -66,12 +68,12 @@ function App() {
           <Route path={PATHS.ABOUT} element={<About />} />
           <Route path={PATHS.BLOG} element={<Blog />} />
           <Route path={PATHS.BLOG_DETAIL} element={<BlogDetail />} />
-          <Route path="change-password" element={<ChangePassword />} />
+          {/* <Route path="change-password" element={<ChangePassword />} /> */}
           <Route path={PATHS.CONTACT} element={<Contactus />} />
           <Route path={PATHS.COURSE_DETAIL} element={<CourseDetail />} />
           <Route path={PATHS.COURSE_ORDER_DETAIL} element={<CourseOrder />} />
           <Route path={PATHS.COURSES} element={<Courses />} />
-          <Route path="payment-method" element={<PaymentMethod />} />
+          {/* <Route path="payment-method" element={<PaymentMethod />} /> */}
           <Route path={PATHS.PRIVACY} element={<Privacy />} />
           <Route element={<PrivateRoute redirectPath={PATHS.PRIVACY} />}>
             <Route path={PATHS.PROFILE.INDEX} element={<ProfileLayout />}>

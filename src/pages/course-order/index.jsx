@@ -62,7 +62,6 @@ const CourseOrder = () => {
   // }, [userCourses]);
 
   const isAlreadyOrdered = !!orderedCourse?.id;
-  console.log("orderedCourse :>> ", orderedCourse);
   const {
     image: orderedImage,
     title: orderedTitle,
@@ -136,7 +135,6 @@ const CourseOrder = () => {
   // useEffect
   useEffect(() => {
     if (profileInfo || orderedCourse) {
-      console.log("typeOptions :>> ", typeOptions);
       setForm({
         name: orderedCourse?.name || profileInfo?.firstName,
         phone: orderedCourse?.phone || profileInfo?.phone,
